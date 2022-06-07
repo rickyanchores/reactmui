@@ -2,7 +2,7 @@
 
 @mixin flex(){
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -12,8 +12,15 @@
     box-sizing: border-box;
 }
 .Home{
-    background: #333;
+    background: rgb(24, 36, 24);
     color: #ccc;
     height: 100vh;
     @include flex;
+    justify-content: space-around;
+    .text{
+        font-size: 5em;
+    }
+    img{
+        width: 350px;
+    }
 }
