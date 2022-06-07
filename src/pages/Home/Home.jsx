@@ -4,6 +4,9 @@ import React from 'react'
 const Home = () => {
     return (
         <div className='Home' >
+            <div className="container">
+                
+            </div>
             <div className="text">
                 <h1>Home</h1>
                 <Typography variant="h6">this is a test react material-ui</Typography>

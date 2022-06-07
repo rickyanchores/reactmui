@@ -1,0 +1,21 @@
+// MIXINS
+@mixin flex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Home{
+    background: rgb(24, 36, 24);
+    color: #ccc;
+    height: 100vh;
+    @include flex;
+    justify-content: space-around;
+    .text{
+        font-size: 5em;
+    }
+    img{
+        width: 350px;
+    }
+}
