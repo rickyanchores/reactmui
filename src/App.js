@@ -1,11 +1,33 @@
+//import ButtonAppBar from "./components/ButtonAppBar";
+import ResponsiveAppBar from "./components/ResponsiveAppBar";
+import "./index.scss";
 
+///////////// CUSTOM THEME CODE HERE ////////////////////////////////
 
-function App() {
+import { createTheme, ThemeProvider } from "@mui/material";
+import  * as Color  from "@mui/material/colors";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: Color.grey[500]
+    },
+    secondary: {
+      main: Color.blue[500]
+    }
+  }
+});
+
+/////////////////////////////////////////////////////////////////////////
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>React mui TEST</h1>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <ResponsiveAppBar />
+      </div>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
