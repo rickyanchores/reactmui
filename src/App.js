@@ -6,6 +6,7 @@ import "./index.scss";
 
 import { createTheme, ThemeProvider } from "@mui/material";
 import  * as Color  from "@mui/material/colors";
+import Home from "./pages/Home/Home";
 
 const theme = createTheme({
   palette: {
@@ -25,6 +26,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <div className="App">
         <ResponsiveAppBar />
+        <Home />
       </div>
     </ThemeProvider>
   );

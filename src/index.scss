@@ -1,5 +1,19 @@
+// MIXINS
+
+@mixin flex(){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+.Home{
+    background: #333;
+    color: #ccc;
+    height: 100vh;
+    @include flex;
 }
