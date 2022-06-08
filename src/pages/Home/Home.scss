@@ -2,7 +2,7 @@
 
 
 .Home{
-    background: black;
+    background: rgb(71, 75, 71);
     color: white;
     height: 100vh;
     @include flex;
@@ -11,6 +11,9 @@
         font-size: 6em;
     }
     img{
-        width: 350px;
+        width: 450px;
+    }
+    .button{
+        padding:  1.5em ;
     }
 }

@@ -11,7 +11,7 @@ import Home from "./pages/Home/Home";
 const theme = createTheme({
   palette: {
     primary: {
-      main: Color.grey[500]
+      main: Color.grey[900]
     },
     secondary: {
       main: Color.blue[500]
