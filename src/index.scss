@@ -1,15 +1,12 @@
 //IMPORTS
+@import "./styles/mixin.scss";
 @import "./pages/Home/Home.scss";
 
-// MIXINS
-@mixin flex(){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
