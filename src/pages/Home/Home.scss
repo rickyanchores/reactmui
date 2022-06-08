@@ -1,14 +1,9 @@
-// MIXINS
-@mixin flex(){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 .Home{
-    background: rgb(24, 36, 24);
-    color: #ccc;
+    background: black;
+    color: white;
     height: 100vh;
     @include flex;
     justify-content: space-around;
