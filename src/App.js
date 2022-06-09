@@ -7,11 +7,12 @@ import "./index.scss";
 import { createTheme, ThemeProvider } from "@mui/material";
 import  * as Color  from "@mui/material/colors";
 import Home from "./pages/Home/Home";
+import SimpleContainer from "./components/SimpleContainer";
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: Color.grey[900]
+      main: Color.grey[400]
     },
     secondary: {
       main: Color.blue[500]
@@ -27,6 +28,7 @@ const App = () => {
       <div className="App">
         <ResponsiveAppBar />
         <Home />
+        <SimpleContainer />
       </div>
     </ThemeProvider>
   );
